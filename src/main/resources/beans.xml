@@ -6,7 +6,7 @@
 
     <bean id="emailClient" class="com.example.learnspring.EmailClient">
 <!--        <constructor-arg ref="basicSpellChecker" />-->
-        <property name="spellChecker" ref="basicSpellChecker" />
+        <property name="spellChecker" ref="advancedSpellChecker" />
     </bean>
 
     <bean id="basicSpellChecker" class="com.example.learnspring.BasicSpellChecker">
