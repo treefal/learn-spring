@@ -5,7 +5,8 @@
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="emailClient" class="com.example.learnspring.EmailClient">
-        <constructor-arg ref="basicSpellChecker" />
+<!--        <constructor-arg ref="basicSpellChecker" />-->
+        <property name="spellChecker" ref="basicSpellChecker" />
     </bean>
 
     <bean id="basicSpellChecker" class="com.example.learnspring.BasicSpellChecker">
