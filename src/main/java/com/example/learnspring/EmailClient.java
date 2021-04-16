@@ -1,5 +1,9 @@
 package com.example.learnspring;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
 public class EmailClient {
     private SpellChecker spellChecker;
 
@@ -10,6 +14,7 @@ public class EmailClient {
         return spellChecker;
     }
 
+    @Autowired
     public void setSpellChecker(SpellChecker spellChecker) {
         this.spellChecker = spellChecker;
     }
